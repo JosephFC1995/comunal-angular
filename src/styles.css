@@ -16,9 +16,14 @@ body {
 
 .breadcrumb--content--title {
     font-size: 32px;
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
+    .breadcrumb {
+        padding: 1rem 0;
+    }
     .breadcrumb--content--title {
         font-size: 24px;
     }
@@ -28,6 +33,10 @@ body {
     margin-top: 0;
     font-size: 48px;
     margin-bottom: 0.6rem;
+}
+
+.breadcrumb--content--title img {
+    width: 74px;
 }
 
 @media (max-width: 768px) {
