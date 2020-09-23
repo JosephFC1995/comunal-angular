@@ -1,0 +1,54 @@
+<div class="menu" id="menu">
+    <div class="menu--top">
+        <div class="menu--content container">
+            <div class="menu--top--logo">
+                <img src="/assets/images/logo.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="breadcrumb">
+    <div class="breadcrumb--content container">
+        <div class="breadcrumb--content--title">
+            <h1>Hola, Usuario</h1>
+        </div>
+
+    </div>
+</div>
+
+<section class="icons section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="icon--link--row col-12 col-md-3" *ngFor="let icon of icons">
+                <div class="icon--link--content" (click)="showToaster(icon.name)">
+                    <div class="icon--link--ico">
+                        <img src="{{ icon.image }}" class="icon--link--image">
+                        <div class="icon--link--title">
+                            <h4>
+                                {{icon.name}}
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer--content">
+            <div class="footer--ico">
+                <img src="/assets/images/footer-ico.png" />
+            </div>
+            <div class="footer--text">
+                En este link podrás resolver todas tus dudas sobre nuestros protocolos de cara al
+                <a href="#">
+                    COVID-19
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>

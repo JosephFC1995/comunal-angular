@@ -1,1 +1,129 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.menu--top {
+    padding: 0.7rem 0;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.breadcrumb {
+    padding: 1rem;
+    box-shadow: 1px 10px 15px #cccccc57;
+}
+
+.breadcrumb--content--title {
+    font-size: 32px;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb--content--title {
+        font-size: 24px;
+    }
+}
+
+.breadcrumb--content--title h1 {
+    margin-top: 0;
+    font-size: 48px;
+    margin-bottom: 0.6rem;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb--content--title h1 {
+        font-size: 24px;
+    }
+}
+
+.breadcrumb--content--ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.breadcrumb--content--ul a {
+    margin-right: 0.5rem;
+    color: #9c9c9c;
+    padding: 0 0.5rem;
+    text-decoration: none;
+}
+
+.breadcrumb--content--ul a:first-child {
+    padding-left: 0;
+}
+
+.breadcrumb--content--ul a.linked {
+    color: #05bce8;
+}
+
+.breadcrumb--content--ul a::after {
+    content: '';
+    background: url('/images/arrow.png');
+}
+
+section {
+    background: #F6F6F6;
+}
+
+section.icons {
+    min-height: calc(100vh - 280px);
+}
+
+.icon--link--content {
+    padding: 1rem 0;
+}
+
+.icon--link--ico {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: box-shadow .5s;
+    cursor: pointer;
+}
+
+.icon--link--ico:hover {
+    box-shadow: 1px 10px 15px #cccccc57;
+}
+
+.icon--link--image {
+    height: 75px;
+}
+
+footer {
+    height: 100px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.footer--content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer--content a {
+    color: #00A8CD;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem 0;
+        height: auto;
+        text-align: center;
+    }
+    .footer--content {
+        flex-wrap: wrap;
+    }
+    .footer--ico {
+        flex: 0 0 100%;
+    }
+}
